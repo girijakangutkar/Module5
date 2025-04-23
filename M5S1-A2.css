@@ -1,0 +1,33 @@
+.title {
+  font-size: 4em;
+  color: #333;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2em;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(43, 43, 44);
+}
+
+p {
+  text-align: justify;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+section {
+  border: solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+body {
+  padding: 10%;
+  margin: 10px;
+}
