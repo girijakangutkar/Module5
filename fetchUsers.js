@@ -24,6 +24,8 @@ async function findUserName() {
     let res = await fetch("https://jsonplaceholder.typicode.com/users");
     let data = await res.json();
     // console.log(data);
+
+    //* Mapping each user from the data and returning the name of the user
     let user = data.map((user) => {
       console.log(user.name);
     });

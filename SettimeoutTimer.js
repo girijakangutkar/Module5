@@ -11,17 +11,12 @@
 // timer(4000);
 
 function timer(duration, onComplete) {
-  let count = 0;
-  if (count < duration) {
-    console.log("count is :", count);
-  }
-  count++;
   onComplete(duration);
   setTimeout(() => {}, duration);
 }
 
 function onComplete(duration) {
-  console.log("Times out!", duration);
+  console.log("Times out! of", duration, "ms");
 }
 
 timer(4000, onComplete);
