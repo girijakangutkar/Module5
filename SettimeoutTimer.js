@@ -11,12 +11,13 @@
 // timer(4000);
 
 function timer(duration, onComplete) {
-  onComplete(duration);
-  setTimeout(() => {}, duration);
+  setTimeout(() => {
+    onComplete(duration);
+  }, duration);
 }
 
 function onComplete(duration) {
   console.log("Times out! of", duration, "ms");
 }
 
-timer(4000, onComplete);
+timer(6000, onComplete);
