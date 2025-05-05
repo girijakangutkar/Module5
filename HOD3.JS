@@ -15,7 +15,14 @@ let products = [
 
 function occurrenceOfProducts(data) {
   let freq = data.reduce((acc, curr) => {
-    acc[curr] = (acc[curr] || 0) + 1;
+    // acc[curr] = (acc[curr] || 0) + 1;
+
+    // return acc;
+    if (acc[curr]) {
+      acc[curr]++;
+    } else {
+      acc[curr] = 1;
+    }
 
     return acc;
   }, {});
